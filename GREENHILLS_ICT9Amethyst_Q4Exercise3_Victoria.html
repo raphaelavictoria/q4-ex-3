@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	JavaScript Events and Functions</title>
+</head>
+<body>
+	<input type= "text" id= "id1" placeholder= "centimeters"><br>
+	<input type= "text" id= "id2" placeholder= "30.48"><br>
+	<input type= "submit" id= "Compute" onclick= "myFunction()"><br>
+	<p id= "answer"></p>
+	<script>
+		function myFunction() {
+			var num1 = document.getElementById('id1').value;
+			var num2 = document.getElementById('id2').value;
+			var answer = num1 * num2; 
+			document.getElementById('answer').innerHTML = answer + "feet";
+		}
+</script>
+</body>
+</html>
